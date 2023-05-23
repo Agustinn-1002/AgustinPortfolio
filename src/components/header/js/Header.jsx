@@ -5,8 +5,8 @@ import '../style/Header.css'
 const Header = () => {
     return(
         <header>
-            <div className="container bannerOne">
-                <img src={BanerOne} alt="" className="w-100"/>
+            <div className="container-md p-0">
+                <img src={BanerOne} className="banner" alt=""/>
             </div>
         </header>
     )

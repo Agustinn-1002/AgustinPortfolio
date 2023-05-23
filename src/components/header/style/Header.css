@@ -1,0 +1,11 @@
+.banner{
+    width: 100vw;
+}
+
+@media(min-width:770px){
+    .banner{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
