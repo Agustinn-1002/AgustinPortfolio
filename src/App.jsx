@@ -1,5 +1,6 @@
 import Navbar from './components/navbar/js/Navbar'
 import Header from './components/header/js/Header'
+import SobreMi from './components/sobreMi/js/SobreMi'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar/>
       <Header/>
+      <SobreMi/>
     </>
   )
 }
