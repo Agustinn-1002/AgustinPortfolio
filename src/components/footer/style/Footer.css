@@ -1,0 +1,27 @@
+.dataline{
+    width: 70vw;
+    border-top: 1px solid #686868;
+}
+.imglogoIso{
+    width: 80px;
+}
+
+.linkRedes{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+@media(min-width:1400px) {
+    .dataline{
+        margin-top: 60px;
+    }
+    .imglogoIso{
+        width: 150px;
+    }
+    .iconRedes{
+        width: 26px;
+    }
+}

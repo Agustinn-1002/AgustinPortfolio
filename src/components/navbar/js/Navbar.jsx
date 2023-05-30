@@ -7,7 +7,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false)
-    
+
     return (
         <nav className="navbarContein">
             <div className="container-md nav-contain">
@@ -20,7 +20,7 @@ const Navbar = () => {
                         <button onClick={() => setNavActive(!navActive)}>X</button>
                         <a className="text-decoration-none text-white" href="#SobreMi" onClick={() => setNavActive(false)}>sobre mi</a>
                         <a className="text-decoration-none text-white" href="#Proyectos" onClick={() => setNavActive(false)}>proyectos</a>
-                        <a className="text-decoration-none text-white" href="#">habilidades</a> 
+                        {/* <a className="text-decoration-none text-white" href="#">habilidades</a>  */}
                     </div>
                 </div>
                 <div onClick={() => setNavActive(false)} className={navActive ? "disableNavActive" : "disableNavDisable"}></div>
