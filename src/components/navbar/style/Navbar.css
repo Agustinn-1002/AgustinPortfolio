@@ -35,7 +35,7 @@
 .nav-links p::first-letter{
     color: var(--bg-color-secondary);
 }
-.active{
+.activeNav{
     position: absolute;
     height: 100vh;
     background-color: #000;
@@ -44,7 +44,7 @@
     transition: all 0.2s ease-in-out;
     z-index: 1000000;
 }
-.disabled{
+.disabledNav{
     position: absolute;
     background-color: #000;
     height: 100vh;
@@ -93,11 +93,11 @@
     .logo{
         margin-left: 60px;
     }
-    .hamburger, .disableNavDisable, .disableNavActive, .active ,.nav-links button{
+    .hamburger, .disableNavDisable, .disableNavActive, .activeNav ,.nav-links button{
         display: none;
     }
     
-    .disabled{
+    .disabledNav{
         position:relative;
         background-color: transparent;
         height: 60px;

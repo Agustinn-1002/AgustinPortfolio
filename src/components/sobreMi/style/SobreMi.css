@@ -1,0 +1,34 @@
+.linkSobreMi {
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 5px;
+}
+
+.borderSUB {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 110%;
+    border-bottom: 10px solid var(--bg-color-secondary);
+}
+.imgProfile{
+    width: 200px;
+}
+.btnSobreMi{
+    border: 0;
+    outline: none;
+    background-color: var(--bg-color-secondary);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 22px;
+    width: 80px;
+    height: 30px;
+}
+.textSobreMi{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 23px;
+}

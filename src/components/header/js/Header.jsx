@@ -1,30 +1,25 @@
-import React from "react";
+import Carousel from 'react-bootstrap/Carousel';
+import React, { useState } from "react";
 import '../style/Header.css'
 import { bannerInfo } from '../../../Info/bannerData'
 
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
 
 const Header = () => {
-
-    const properties = {
-        duration: 3000,
-        autoplay: true,
-        transitionDuration: 500,
-        arrows: true,
-        infinite: true,
-        easing: "ease",
-        prevArrow: <button className="rowSlider">{'<'}</button>,
-        nextArrow: <button className="rowSlider">{'>'}</button>
-    
-      };
+    const [data, setData] = useState(bannerInfo);
     const ancho = screen.width
     return (
-        <header >
-            <Slide {...properties   }>
-                {bannerInfo.map(e =>
+        <header>
+            <Carousel indicators={false} className='w-100'>
+                {data.map((e, index) =>
 
-                    <div className="p-0 banner">
+                    <Carousel.Item key={index} interval={2000}>
+                        <div>
+                            {ancho <= 430 ?
+                                <img src={e.imageMobile} className="banner" alt="" />
+                                :
+                                <img src={e.imageDesktop} className="banner" alt="" />
+                            }
+                        </div>
                         <div className="info text-white">
                             <div className="textInfo">
                                 <h3 className="fw-light subTitulo">{e.subTitulo}</h3>
@@ -33,15 +28,10 @@ const Header = () => {
                             </div>
                             <button className="w-25">Ver Proyecto</button>
                         </div>
-                        {ancho <= 430 ?
-                            <img src={e.imageMobile} className="banner" alt="" />
-                            :
-                            <img src={e.imageDesktop} className="banner" alt="" />
-                        }
-                    </div>
+                    </Carousel.Item>
 
                 )}
-            </Slide>
+            </Carousel>
         </header>
     )
 }

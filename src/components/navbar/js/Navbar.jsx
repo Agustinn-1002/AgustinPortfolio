@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div onClick={() => setNavActive(!navActive)} className="hamburger">
                     <AiOutlineMenu />
                 </div>
-                <div className={navActive ? "active" : "disabled"}>
+                <div className={navActive ? "activeNav" : "disabledNav"}>
                     <div className='nav-links'>
                         <button onClick={() => setNavActive(!navActive)}>X</button>
                         <p>sobre mi</p>
