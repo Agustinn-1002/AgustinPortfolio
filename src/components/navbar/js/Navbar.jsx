@@ -18,9 +18,9 @@ const Navbar = () => {
                 <div className={navActive ? "activeNav" : "disabledNav"}>
                     <div className='nav-links'>
                         <button onClick={() => setNavActive(!navActive)}>X</button>
-                        <p>sobre mi</p>
-                        <p>proyectos</p>
-                        <p>habilidades</p>
+                        <a className="text-decoration-none text-white" href="#SobreMi" onClick={() => setNavActive(false)}>sobre mi</a>
+                        <a className="text-decoration-none text-white" href="#Proyectos" onClick={() => setNavActive(false)}>proyectos</a>
+                        <a className="text-decoration-none text-white" href="#">habilidades</a> 
                     </div>
                 </div>
                 <div onClick={() => setNavActive(false)} className={navActive ? "disableNavActive" : "disableNavDisable"}></div>

@@ -29,10 +29,14 @@
     color: #fff;
     text-transform: capitalize;
 }
-.nav-links p{
-    margin-top: 20px
+.nav-links a{
+    margin-top: 20px;
+    cursor: pointer;
 }
-.nav-links p::first-letter{
+.nav-links a::first-letter{
+    color: var(--bg-color-secondary);
+}
+.nav-links a:hover {
     color: var(--bg-color-secondary);
 }
 .activeNav{
@@ -116,7 +120,7 @@
         justify-content: center;
         align-items: center;
     }
-    .nav-links p{
+    .nav-links a{
         color: #fff;
         font-size: 16px;
         text-transform: uppercase;

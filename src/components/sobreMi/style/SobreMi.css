@@ -27,8 +27,53 @@
     width: 80px;
     height: 30px;
 }
-.textSobreMi{
+.textSobreMi , .textContact{
     font-size: 20px;
     font-weight: 200;
     line-height: 23px;
+}
+
+.contactSobreMi{
+    display: flex;
+    flex-direction: column;
+}
+
+.lineSobreMi{
+    border-bottom: 1px solid #686868;
+}
+
+.linksSobreMi a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0 20px;
+}
+.infoRedes{display: none;}
+.infoSobreMi{
+    width: 70vw;
+}
+@media(min-width:770px) {
+    .infoSobreMi{
+        width: 120vh;
+    }
+    .imgProfile{
+        width: 300px;
+    }
+    .linksSobreMi a{
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    .linksSobreMi a:first-child{
+        margin-left:0 ;
+    }
+    .infoRedes{
+        display: inline;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+}
+
+.linksSobreMi a:hover{
+    color: var(--bg-color-secondary);
 }

@@ -8,7 +8,7 @@ const Header = () => {
     const [data, setData] = useState(bannerInfo);
     const ancho = screen.width
     return (
-        <header>
+        <header id='Proyectos'>
             <Carousel indicators={false} className='w-100'>
                 {data.map((e, index) =>
 
