@@ -3,7 +3,7 @@
     border-top: 1px solid #686868;
 }
 .imglogoIso{
-    width: 80px;
+    width: 90px;
 }
 
 .linkRedes{
@@ -14,14 +14,32 @@
     margin: 10px 0;
 }
 
+@media(min-width:0px) and (max-width:410px){
+    .linkRedes{
+        font-size: 26px;
+        margin: 5px 0;
+    }
+    .linkRedes b{display: none;}
+}
+
 @media(min-width:1400px) {
     .dataline{
+        width: 80vw;
         margin-top: 60px;
     }
     .imglogoIso{
+        margin-top: 20px;
         width: 150px;
     }
     .iconRedes{
-        width: 26px;
+        font-size: 26px;
+        
     }
+    .linkRedes{
+        margin: 30px 10px;
+    }
+}
+
+.linkRedes:hover{
+    color: var(--bg-color-secondary)
 }
