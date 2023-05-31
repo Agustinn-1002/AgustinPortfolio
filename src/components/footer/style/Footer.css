@@ -4,6 +4,7 @@
 }
 .imglogoIso{
     width: 90px;
+    margin-bottom: 20px;
 }
 
 .linkRedes{
@@ -30,6 +31,7 @@
     .imglogoIso{
         margin-top: 20px;
         width: 150px;
+        margin-bottom: 40px;
     }
     .iconRedes{
         font-size: 26px;
