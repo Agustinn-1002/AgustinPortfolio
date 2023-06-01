@@ -1,0 +1,40 @@
+.proyectosContain{
+    width: 100%;
+    background-color: var(--bg-color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardProyects{
+    background-color: #fff;
+    height: 300px;
+    width: 250px !important;
+    border-radius: 14px !important;
+}
+
+.imgPortada{
+    border-radius: 14px !important;
+}
+.tituloPro{
+    font-weight: bold !important;
+}
+.subTituloPro{
+    border-top: 1px solid #0003;
+    padding-top: 5px;
+    font-weight: 300 !important;
+}
+.tituloPro , .subTituloPro{
+    font-size: 20px !important;
+}
+
+.btnProyects{
+    background-color: transparent;
+    color: var(--bg-color-secondary);
+    border: 1px solid #bdbdbd;
+    border-radius: 22px;
+    outline: 0;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: 700;
+}

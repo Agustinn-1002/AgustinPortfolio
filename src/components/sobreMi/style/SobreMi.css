@@ -63,7 +63,7 @@
 
 @media(min-width:770px) {
     .infoSobreMi {
-        width: 140vh;
+        width: 80vw;
     }
 
     .textSobreMi,
@@ -79,12 +79,6 @@
         margin-right: 20px;
     }
 
-    .infoRedes {
-        display: inline;
-        font-size: 16px;
-        font-weight: 400;
-        margin-left: 5px;
-    }
 
     .linksSobreMi a {
         margin-right: 17px;
@@ -95,9 +89,16 @@
         margin-left: 0;
     }
 }
-
+@media(min-width:1070px){
+    .infoRedes {
+        display: inline;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+}
 @media(min-width:1400px) {
-
+    
     .textSobreMi,
     .textContact {
         font-size: 18px;
