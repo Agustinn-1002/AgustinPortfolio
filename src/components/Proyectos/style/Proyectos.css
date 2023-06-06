@@ -1,25 +1,51 @@
-.proyectosContain{
+.proyectosContain {
     width: 100%;
     background-color: var(--bg-color-secondary);
+    padding: 30px 0;
+    margin: 50px 0;
+    z-index: -1;
 }
 
-.cardDataPro{
+.linkPro {
+    color: #fff;
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 5px;
+    z-index: 0;
+
+}
+
+.borderPro {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 110%;
+    border-bottom: 10px solid #000;
+}
+
+.cardDataPro {
     background-color: #fff;
     width: 250px !important;
 }
-.tituloPro{
+
+.tituloPro {
     font-weight: bold !important;
 }
-.subTituloPro{
+
+.subTituloPro {
     border-top: 1px solid #0003;
     padding-top: 5px;
     font-weight: 300 !important;
 }
-.tituloPro , .subTituloPro{
+
+.tituloPro,
+.subTituloPro {
     font-size: 20px !important;
 }
 
-.btnProyects{
+.btnProyects {
     background-color: transparent;
     color: var(--bg-color-secondary);
     border: 1px solid #bdbdbd;
@@ -28,4 +54,89 @@
     padding: 5px 10px;
     font-size: 17px;
     font-weight: 700;
+}
+
+
+/* ----- PRUEBA ----- */
+
+.cardPrueba {
+    position: relative;
+    width: 360px;
+    height: auto;
+    background: transparent;
+}
+.cardPrueba .imagePrueba {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cardPrueba .imagePrueba img {
+    width: 100%;
+    transition: .5s;
+}
+.cardPrueba:hover .imagePrueba img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.cardPrueba .detailsPrueba {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: #ffc107;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.cardPrueba:hover .detailsPrueba {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.cardPrueba .detailsPrueba .centerPrueba {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cardPrueba .detailsPrueba .centerPrueba h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cardPrueba .detailsPrueba .centerPrueba h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.cardPrueba .detailsPrueba .centerPrueba p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.cardPrueba .detailsPrueba .centerPrueba ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.cardPrueba .detailsPrueba .centerPrueba ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.cardPrueba .detailsPrueba .centerPrueba ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.cardPrueba .detailsPrueba .centerPrueba ul li a:hover {
+    background: #ff3636;
 }
