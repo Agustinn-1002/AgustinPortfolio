@@ -3,8 +3,11 @@ import '../style/Proyectos.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { bannerInfo } from '../../../Info/bannerData'
+import { AiOutlineClose } from "react-icons/ai";
+
 
 const Proyectos = () => {
+    const[vewInfo , setVewInfo] = useState(false)
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -25,8 +28,8 @@ const Proyectos = () => {
         }
     };
     return (
-        <section className="proyectosContain" id='Proyectos'>
-            <div className="container">
+        <section className="proyectosContain" id='Proyectos' >
+            <div className="container" >
                 <h2 className="linkPro">PROYECTOS<div className="borderPro"></div></h2>
                 <Carousel responsive={responsive} swipeable={true} infinite={true} autoPlay={true} autoPlaySpeed={4000}>
                     {bannerInfo.map(e =>
@@ -44,22 +47,45 @@ const Proyectos = () => {
                         </div>
                     )}
                 </Carousel>
-                <div className="cardPrueba">
-                    <div className="imagePrueba">
-                        <img src={bannerInfo[0].imagePortada} />
-                    </div>
-                    <div className="detailsPrueba">
-                        <div className="centerPrueba">
-                            <h1>Someone famous<br /><span>team leader</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
-                            <ul>
-                                <li><a href="#"></a>facebook</li>
-                                <li><a href="#"></a>twitter</li>
-                                <li><a href="#"></a>linkedin</li>
-                                <li><a href="#"></a>instagram</li>
-                                
-                            </ul>
+                <div className="d-flex align-items-center">
+                    <div className="bg-white infoPru">
+                        <div className="d-flex flex-column align-items-center justify-content-around h-100 px-2">
+                            <div className="d-flex flex-column align-items-center">
+                                <h2 className="tituloPru">{bannerInfo[0].titulo}</h2>
+                                <div className="linePru"></div>
+                                <h3 className="subtituloPru">{bannerInfo[0].subTitulo}</h3>
+                            </div>
+                            <button className="btnInfoPru" onClick={() => setVewInfo(!vewInfo)}>Ver Mas</button>
                         </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div className="imgAndInfo">
+                        <div className={vewInfo?"techInfoPru p-3":'disablePru p-3'}>
+                            <AiOutlineClose className="closeData" onClick={()=>setVewInfo(!vewInfo)}/>
+                            <div className="mb-2">
+                                {bannerInfo[0].tecnologiasFront.length > 0 ?
+                                    <>
+                                        <p className="mb-1">Front-End</p>
+                                        {bannerInfo[0].tecnologiasFront.map(e =>
+                                            <b>- {e} </b>
+                                        )}
+                                    </>
+                                    : null}
+                            </div>
+                            <div>
+                                {bannerInfo[0].tecnologiasBack.length > 0 ?
+                                    <>
+                                        <p className="mb-1">Back-End</p>
+                                        {bannerInfo[0].tecnologiasBack.map(e =>
+                                            <b>- {e} </b>
+                                        )}
+                                    </>
+                                    : null}
+                            </div>
+                            <button className="btnPru">Ver Proyecto</button>
+                        </div>
+                        <img src={bannerInfo[0].imageDesktop} className="imagePru" alt="" />
                     </div>
                 </div>
             </div>

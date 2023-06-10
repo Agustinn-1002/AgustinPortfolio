@@ -90,6 +90,9 @@
     }
 }
 @media(min-width:1070px){
+    .infoSobreMi {
+        width: 70vw;
+    }
     .infoRedes {
         display: inline;
         font-size: 16px;
