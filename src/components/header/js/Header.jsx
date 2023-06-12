@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React, { useState } from "react";
 import '../style/Header.css'
+import MediaQuery from 'react-responsive'
 import { bannerInfo } from '../../../Info/bannerData'
 
 
@@ -14,11 +15,12 @@ const Header = () => {
 
                     <Carousel.Item key={index} interval={2000}>
                         <div>
-                            {ancho <= 430 ?
+                            <MediaQuery maxWidth={430}>
                                 <img src={e.imageMobile} className="banner" alt="" />
-                                :
-                                <img src={e.imageDesktop} className="banner" alt="" />
-                            }
+                            </MediaQuery>
+                            <MediaQuery minWidth={430}>
+                            <img src={e.imageDesktop} className="banner" alt="" />
+                            </MediaQuery>
                         </div>
                         <div className="info text-white">
                             <div className="textInfo">
