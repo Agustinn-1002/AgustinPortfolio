@@ -7,7 +7,7 @@ import cv from '../../../Info/MAURO AGUSTIN PASTEN CV.pdf'
 
 const SobreMi = () => {
     return (
-        <div className="text-white container mt-5" id="SobreMi">
+        <div className="text-white container" id="SobreMi">
             <h2 className="linkSobreMi">SOBRE MI<div className="borderSUB"></div></h2>
 
             <div className="infoSobreMi mt-md-4 mx-auto d-flex flex-column flex-md-row align-items-center">

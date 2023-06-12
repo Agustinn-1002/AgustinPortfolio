@@ -3,6 +3,7 @@ import Header from './components/header/js/Header'
 import SobreMi from './components/sobreMi/js/SobreMi'
 import Footer from './components/footer/js/Footer'
 import Proyectos from './components/Proyectos/js/Proyectos'
+import Habilidades from './components/habilidades/js/Habilidades'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <SobreMi/>
       <Proyectos/>
+      <Habilidades/>
       <Footer/>
     </>
   )

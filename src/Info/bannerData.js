@@ -9,6 +9,7 @@ import portadaTwo from '../img/imgPortadaTwo.png'
 
 export const bannerInfo = [
     {
+        id:1,
         imageDesktop: imageOneDesktop,
         imageMobile: mobileBannerOne,
         imagePortada: portadaOne,
@@ -20,6 +21,7 @@ export const bannerInfo = [
 
     },
     {
+        id:2,
         imageDesktop: imageTwoDesktop,
         imageMobile: mobileBannerTwo,
         imagePortada: portadaTwo,

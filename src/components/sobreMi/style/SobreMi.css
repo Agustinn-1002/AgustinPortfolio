@@ -1,3 +1,7 @@
+#SobreMi{
+    padding-top: 40px;
+}
+
 .linkSobreMi {
     display: inline;
     font-size: 24px;
@@ -64,6 +68,9 @@
 @media(min-width:770px) {
     .infoSobreMi {
         width: 80vw;
+    }
+    #SobreMi{
+        padding-top: 100px;
     }
 
     .textSobreMi,

@@ -1,0 +1,14 @@
+.imgIcon {
+    width: 66px;
+}
+
+.textIcons {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+
+.textIcons:hover{
+    color: var(--bg-color-secondary);
+}
