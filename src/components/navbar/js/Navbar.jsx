@@ -20,7 +20,7 @@ const Navbar = () => {
                         <button onClick={() => setNavActive(!navActive)}>X</button>
                         <a className="text-decoration-none text-white" href="#SobreMi" onClick={() => setNavActive(false)}>sobre mi</a>
                         <a className="text-decoration-none text-white" href="#Proyectos" onClick={() => setNavActive(false)}>proyectos</a>
-                        <a className="text-decoration-none text-white" href="#Habilidades">habilidades</a> 
+                        <a className="text-decoration-none text-white" href="#Habilidades" onClick={() => setNavActive(false)}>habilidades</a> 
                     </div>
                 </div>
                 <div onClick={() => setNavActive(false)} className={navActive ? "disableNavActive" : "disableNavDisable"}></div>

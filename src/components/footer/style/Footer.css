@@ -17,10 +17,12 @@
 }
 
 @media(min-width:0px) and (max-width:410px){
-    
+    .iconRedes{
+        font-size: 32px;
+    }
     .linkRedes{
-        font-size: 26px;
-        margin: 5px 0;
+        
+        margin: 8px 0;
     }
     .linkRedes b{display: none;}
 }
