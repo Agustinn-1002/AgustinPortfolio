@@ -45,7 +45,7 @@ const Proyectos = () => {
                                     <h2 className="subTituloPro">{e.subTitulo}</h2>
                                 </div>
                                 <div className="mt-4 mb-4">
-                                    <button className="btnProyects">VER WEB</button>
+                                    <a href={e.link} className='btnProyects' target='_blank'>VER WEB</a>
                                 </div>
                             </div>
                         </div>
