@@ -17,7 +17,8 @@ export const bannerInfo = [
         titulo: 'SNOWPANDA',
         descripcion: 'Ventas de tablas y accesorios para Snowboard ',
         tecnologiasFront: ['ReactJS', 'Redux', 'Bootstrap'],
-        tecnologiasBack: ['PostgreSQL', 'Express', 'NodeJs']
+        tecnologiasBack: ['PostgreSQL', 'Express', 'NodeJs'],
+        link:'https://pf-10a-bhm9.vercel.app/'
 
     },
     {
@@ -29,6 +30,7 @@ export const bannerInfo = [
         titulo: 'POKEDEX ',
         descripcion: 'Visualización, buscador y creador de pokemones ',
         tecnologiasFront: ['ReactJS', 'Redux', 'CSS'],
-        tecnologiasBack: ['PostgreSQL', 'Express', 'NodeJs']
+        tecnologiasBack: ['PostgreSQL', 'Express', 'NodeJs'],
+        link: 'https://pi-front-end-wheat.vercel.app/'
     }
 ]

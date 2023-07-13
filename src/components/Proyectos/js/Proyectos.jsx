@@ -92,7 +92,8 @@ const Proyectos = () => {
                                                 </>
                                                 : null}
                                         </div>
-                                        <button className="btnPru">Ver Proyecto</button>
+                                        <a href={e.link} className='btnPru' target='_blank'>Ver Proyecto</a>
+                                        
                                     </div>
                                     <img src={e.imagePortada} className="imagePru" alt="" />
                                 </div>
