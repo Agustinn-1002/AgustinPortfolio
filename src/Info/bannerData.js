@@ -31,6 +31,6 @@ export const bannerInfo = [
         descripcion: 'Visualización, buscador y creador de pokemones ',
         tecnologiasFront: ['ReactJS', 'Redux', 'CSS'],
         tecnologiasBack: ['PostgreSQL', 'Express', 'NodeJs'],
-        link: 'https://pi-front-end-wheat.vercel.app/'
+        link: 'https://henry-pokedex.vercel.app/'
     }
 ]
