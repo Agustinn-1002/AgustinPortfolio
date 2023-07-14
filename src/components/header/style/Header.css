@@ -19,7 +19,7 @@
     margin-right: 40px;
 }
 
-.info button {
+.info a {
     background-color: var(--bg-color-secondary);
     color: #fff;
     border: 0;
@@ -50,7 +50,7 @@
 }
 
 @media(max-width:390px) {
-    .info button {
+    .info a {
         font-size: 12px;
         cursor: pointer;
     }
@@ -73,7 +73,7 @@
         margin: auto;
     }
 
-    .info button {
+    .info a {
         max-width: 150px;
     }
 }

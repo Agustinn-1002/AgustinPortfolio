@@ -28,7 +28,7 @@ const Header = () => {
                                 <h1 className="fw-bold titulo">{e.titulo}</h1>
                                 <p className="fst-italic descripcion">{e.descripcion}</p>
                             </div>
-                            <button className="w-25"><a href={e.link} className='text-decoration-none text-white' target='_blank'>Ver Proyecto</a></button>
+                            <a href={e.link} className='text-decoration-none text-white' target='_blank'>Ver Proyecto</a>
                         </div>
                     </Carousel.Item>
 
