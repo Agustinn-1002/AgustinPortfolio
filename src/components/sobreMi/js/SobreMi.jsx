@@ -2,7 +2,8 @@ import React from "react";
 import '../style/SobreMi.css'
 import profile from '../../../img/profile.png';
 import { AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
-import cv from '../../../Info/CV MAURO AGUSTÍN PASTEN CV.pdf'
+import cv from '../../../Info/Curriculum Resume Agustin Pasten.pdf'
+
 
 const SobreMi = () => {
     return (
