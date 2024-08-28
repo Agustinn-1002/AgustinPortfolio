@@ -22,7 +22,7 @@ export const bannerInfo = [
         descripcion: 'Carta de invitación web para fiesta de 15 años',
         tecnologiasFront: ['NextJS', 'Tailwind'],
         tecnologiasBack: [],
-        link: 'https://invitacion-ariel-5ipetmwgj-mauroagustins-projects.vercel.app/'
+        link: 'https://invitacion-ariel.vercel.app/'
     },
     {
         id: 2,
