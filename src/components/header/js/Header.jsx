@@ -1,17 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel';
-import React, { useState } from "react";
+
 import '../style/Header.css'
 import MediaQuery from 'react-responsive'
 import { bannerInfo } from '../../../Info/bannerData'
 
 
 const Header = () => {
-    const [data, setData] = useState(bannerInfo);
-    const ancho = screen.width
+
+
     return (
-        <header>
+        <header id='Inicio'>
             <Carousel indicators={false} className='w-100'>
-                {data.map((e, index) =>
+                {bannerInfo.map((e, index) =>
 
                     <Carousel.Item key={index} interval={2000}>
                         <div>

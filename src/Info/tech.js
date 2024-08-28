@@ -8,46 +8,51 @@ import express from '../img/express.png';
 import bootstrap from '../img/bootstrap.png';
 import nodejs from '../img/nodejs.png';
 import sequelize from '../img/sequelize.png';
+import next from '../img/next.png';
 
 export const techs = [
     {
-        name:'HTML',
-        icon:html,
+        name: 'HTML',
+        icon: html,
     },
     {
-        name:'CSS',
-        icon:css,
+        name: 'CSS',
+        icon: css,
     },
     {
-        name:'JAVASCRIPT',
-        icon:javascript,
+        name: 'JAVASCRIPT',
+        icon: javascript,
     },
     {
-        name:'REACT.JS',
-        icon:reactjs,
+        name: 'REACT.JS',
+        icon: reactjs,
     },
     {
-        name:'REDUX',
-        icon:redux,
+        name: 'NEXT.JS',
+        icon: next,
     },
     {
-        name:'POSTGRESQL',
-        icon:postgresql,
+        name: 'REDUX',
+        icon: redux,
     },
     {
-        name:'EXPRESS',
-        icon:express,
+        name: 'POSTGRESQL',
+        icon: postgresql,
     },
     {
-        name:'BOOTSTRAP',
-        icon:bootstrap,
+        name: 'EXPRESS',
+        icon: express,
     },
     {
-        name:'NODE.JS',
-        icon:nodejs,
+        name: 'BOOTSTRAP',
+        icon: bootstrap,
     },
     {
-        name:'SEQUELIZE',
-        icon:sequelize,
+        name: 'NODE.JS',
+        icon: nodejs,
+    },
+    {
+        name: 'SEQUELIZE',
+        icon: sequelize,
     }
 ]

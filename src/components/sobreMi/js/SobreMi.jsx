@@ -2,7 +2,7 @@ import React from "react";
 import '../style/SobreMi.css'
 import profile from '../../../img/profile.png';
 import { AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
-import cv from '../../../Info/Curriculum Resume Agustin Pasten.pdf'
+import cv from '../../../Info/CV Agustin Pasten.pdf'
 
 
 const SobreMi = () => {
@@ -24,7 +24,7 @@ const SobreMi = () => {
                         <div className="lineSobreMi mb-3 mb-md-2 order-md-1"></div>
                         <div className="linksSobreMi text-center text-md-start order-md-2">
                             <a href="https://www.instagram.com/_aguspasten_/" target="_blank"><AiOutlineInstagram /><b className="infoRedes">@_aguspasten_</b></a>
-                            <a href="https://www.linkedin.com/in/mauro-agustin-pasten-81ba57254/" target="_blank"><AiOutlineLinkedin /><b className="infoRedes">Agustinn-1002</b></a>
+                            <a href="https://www.linkedin.com/in/mauro-agustin-pasten-68a39b289/" target="_blank"><AiOutlineLinkedin /><b className="infoRedes">Agustinn-1002</b></a>
                             <a href="https://github.com/Agustinn-1002" target="_blank"><AiOutlineGithub /><b className="infoRedes">Mauro Agustin Pasten</b></a>
                         </div>
                         <div className="textContact text-center text-md-start mt-3 mt-md-0 order-md-0">
