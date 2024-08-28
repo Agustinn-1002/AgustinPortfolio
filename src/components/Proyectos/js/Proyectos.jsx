@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import '../style/Proyectos.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -37,7 +37,7 @@ const Proyectos = () => {
             <MediaQuery maxWidth={1070}>
                 <Carousel responsive={responsive} swipeable={true} infinite={true} autoPlay={true} autoPlaySpeed={4000}>
                     {bannerInfo.map(e =>
-                        <div className="mx-auto bg-white my-4 cardDataPro" style={{ borderRadius: '20px' }}>
+                        <div key={e.id} className="mx-auto bg-white my-4 cardDataPro" style={{ borderRadius: '20px' }}>
                             <img src={e.imagePortada} className='w-100' style={{ borderRadius: '20px 20px 0 0' }} />
                             <div className="d-flex flex-column align-items-center justify-content-around ">
                                 <div className="w-75 text-center my-3">
@@ -45,7 +45,10 @@ const Proyectos = () => {
                                     <h2 className="subTituloPro">{e.subTitulo}</h2>
                                 </div>
                                 <div className="mt-4 mb-4">
-                                    <a href={e.link} className='btnProyects' target='_blank'>VER WEB</a>
+                                {
+                                            e.link.length > 0 ?<a href={e.link} className='btnProyects' target='_blank'>VER WEB</a> : null
+                                }
+                                    
                                 </div>
                             </div>
                         </div>
@@ -56,7 +59,7 @@ const Proyectos = () => {
                 
                     <Carousel responsive={responsive} swipeable={true} infinite={true} autoPlay={true} autoPlaySpeed={6000} className='container mb-4'>
                         {bannerInfo.map(e =>
-                            <div className="d-flex align-items-center justify-content-center">
+                            <div key={e.id} className="d-flex align-items-center justify-content-center">
                                 <div className="bg-white infoPru">
                                     <div className="d-flex flex-column align-items-center justify-content-around h-100 px-3">
                                         <div className="d-flex flex-column align-items-center">
@@ -72,12 +75,12 @@ const Proyectos = () => {
                                 <div className="imgAndInfo">
                                     <div className={e.id === vewInfo ? "techInfoPru p-3 pe-5" : 'disablePru p-3 pe-5'}>
                                         <AiOutlineClose className="closeData" onClick={() => setVewInfo(0)} />
-                                        <div className="mb-2">
+                                        <div className="mb-2  me-5">
                                             {e.tecnologiasFront.length > 0 ?
                                                 <>
                                                     <p className="mb-1">Front-End</p>
                                                     {e.tecnologiasFront.map(e =>
-                                                        <b>- {e} </b>
+                                                        <b key={e.id}>- {e} </b>
                                                     )}
                                                 </>
                                                 : null}
@@ -87,12 +90,15 @@ const Proyectos = () => {
                                                 <>
                                                     <p className="mb-1">Back-End</p>
                                                     {e.tecnologiasBack.map(e =>
-                                                        <b>- {e} </b>
+                                                        <b key={e.id}>- {e} </b>
                                                     )}
                                                 </>
                                                 : null}
                                         </div>
-                                        <a href={e.link} className='btnPru' target='_blank'>Ver Proyecto</a>
+                                        {
+                                            e.link.length > 0 ? <a href={e.link} className='btnPru' target='_blank'>Ver Proyecto</a> : null
+                                        }
+                                        
                                         
                                     </div>
                                     <img src={e.imagePortada} className="imagePru" alt="" />
